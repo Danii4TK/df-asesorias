@@ -1,0 +1,312 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="DF Asesorías – Daniel Flores Muñoz, Contador Auditor. Contabilidad, tributación, remuneraciones y auditoría para PYMEs en RM y todo Chile."/>
+  <title>DF Asesorías | Contabilidad y Auditoría para Pymes – RM y todo Chile</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#inicio" class="nav-logo">
+        <div class="logo-svg">
+          <svg viewBox="0 0 60 70" xmlns="http://www.w3.org/2000/svg" width="44" height="52">
+            <path d="M4 8 L4 62 L22 62 Q38 62 38 35 Q38 8 22 8 Z" fill="#1c2d5a"/>
+            <path d="M10 15 L21 15 Q30 15 30 35 Q30 55 21 55 L10 55 Z" fill="#f5f7fa"/>
+            <rect x="28" y="8" width="6" height="36" fill="#5c6472"/>
+            <rect x="28" y="8" width="26" height="6" fill="#5c6472"/>
+            <rect x="28" y="26" width="20" height="6" fill="#5c6472"/>
+          </svg>
+        </div>
+        <div class="nav-brand-text">
+          <span class="brand-main">DF Asesorías</span>
+          <span class="brand-sub">Contador Auditor</span>
+        </div>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+        <li><a href="#servicios" class="nav-link">Soluciones</a></li>
+        <li><a href="experiencia.html" class="nav-link">Experiencia</a></li>
+        <li><a href="#contacto" class="nav-link btn-nav-cta">Solicitar Asesoría</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <i class="fas fa-shield-alt"></i> Contador Auditor Certificado &middot; RM y todo Chile
+      </div>
+      <h1 class="hero-title">Contabilidad Clara y<br>Auditoría Estratégica para Pymes</h1>
+      <p class="hero-subtitle">
+        Gestionamos tu contabilidad, tributación y sueldos para que tú te<br>
+        concentres en hacer crecer tu negocio. Sin multas, sin sorpresas.
+      </p>
+      <div class="hero-ctas">
+        <a href="#contacto" class="btn-primary"><i class="fas fa-comments-dollar"></i> Solicitar Asesoría</a>
+        <a href="#servicios" class="btn-secondary">Ver Soluciones</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number" data-target="10">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Años de<br>Experiencia</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number" data-target="4">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Clientes<br>PYME Activos</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number" data-target="6">0</span>
+          <span class="stat-label">Servicios<br>Especializados</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Ver soluciones</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- ===== SOLUCIONES (6 tarjetas 3x2) ===== -->
+  <section class="services" id="servicios">
+    <div class="services-bg-shape"></div>
+    <div class="container">
+      <div class="section-header light">
+        <span class="section-tag">Soluciones</span>
+        <h2 class="section-title">El ciclo contable completo<br>para tu Pyme</h2>
+        <p class="section-subtitle">Desde la creación de tu empresa hasta la auditoría de tus activos, estamos en cada paso</p>
+        <div class="section-divider light"></div>
+      </div>
+      <div class="services-grid">
+
+        <!-- 1 -->
+        <div class="service-card" data-delay="0">
+          <div class="service-icon"><i class="fas fa-building"></i></div>
+          <h3>Creación de Empresas</h3>
+          <p>Te ayudamos desde cero: Constitución, Estatutos e Inscripción en el Registro de Comercio. <strong>¡Haz realidad tu negocio hoy!</strong></p>
+          <a href="#contacto" class="service-cta">Consultar <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <!-- 2 -->
+        <div class="service-card" data-delay="80">
+          <div class="service-icon"><i class="fas fa-id-card"></i></div>
+          <h3>Inicio de Actividades (SII)</h3>
+          <p>Tramitamos tu RUT, seleccionamos tu giro y te habilitamos ante el SII para <strong>empezar a facturar legalmente</strong>.</p>
+          <a href="#contacto" class="service-cta">Consultar <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <!-- 3 -->
+        <div class="service-card" data-delay="160">
+          <div class="service-icon"><i class="fas fa-book-open"></i></div>
+          <h3>Contabilidad Mensual Pyme</h3>
+          <p>Llevamos tus libros al día, gestionamos tu Registro de Compras/Ventas y preparamos tu <strong>Balance</strong>.</p>
+          <a href="#contacto" class="service-cta">Consultar <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <!-- 4 -->
+        <div class="service-card" data-delay="240">
+          <div class="service-icon"><i class="fas fa-percentage"></i></div>
+          <h3>Declaración de F29 (IVA)</h3>
+          <p>Calculamos y presentamos tu IVA mensual <strong>sin errores ni multas</strong>, aprovechando todos tus créditos fiscales.</p>
+          <a href="#contacto" class="service-cta">Consultar <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <!-- 5 -->
+        <div class="service-card" data-delay="320">
+          <div class="service-icon"><i class="fas fa-users"></i></div>
+          <h3>Sueldos y Remuneraciones</h3>
+          <p>Liquidaciones de sueldo, contratos, finiquitos y pago de imposiciones vía <strong>Previred</strong>. Todo en orden legal.</p>
+          <a href="#contacto" class="service-cta">Consultar <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <!-- 6 -->
+        <div class="service-card featured" data-delay="400">
+          <div class="service-icon"><i class="fas fa-search-dollar"></i></div>
+          <h3>Auditoría &amp; Inventarios</h3>
+          <p>Control riguroso de activos, existencias y costos operacionales. <strong>Especialidad en rubros complejos como Banquetería</strong>.</p>
+          <a href="#contacto" class="service-cta">Consultar <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACTO ===== -->
+  <section class="contact" id="contacto">
+    <div class="contact-bg-shape"></div>
+    <div class="container">
+      <div class="section-header light">
+        <span class="section-tag">Contacto</span>
+        <h2 class="section-title">Hablemos de tu negocio</h2>
+        <p class="section-subtitle">Primera consulta sin costo &middot; Respuesta en menos de 24 horas</p>
+        <div class="section-divider light"></div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <a href="https://wa.me/56977423347?text=Hola%20Daniel%2C%20quisiera%20consultar%20sobre%20mi%20F29%20o%20Sueldos."
+             target="_blank" class="btn-whatsapp-big">
+            <i class="fab fa-whatsapp"></i>
+            <div>
+              <strong>Hablemos de tu F29 o Sueldos</strong>
+              <span>Escríbeme por WhatsApp Business ahora</span>
+            </div>
+          </a>
+          <div class="contact-divider"><span>o envía un mensaje</span></div>
+          <a href="mailto:Daniel.flores.munoz1995@gmail.com" class="contact-card">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <strong>Correo Electrónico</strong>
+              <span>Daniel.flores.munoz1995@gmail.com</span>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/daniel-flores-mu%C3%B1oz-5725a7188/" target="_blank" class="contact-card">
+            <div class="contact-icon linkedin"><i class="fab fa-linkedin-in"></i></div>
+            <div>
+              <strong>LinkedIn</strong>
+              <span>Daniel Flores Muñoz</span>
+            </div>
+          </a>
+          <div class="contact-card no-link">
+            <div class="contact-icon location"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <strong>Ubicación</strong>
+              <span>RM y todo Chile</span>
+            </div>
+          </div>
+          <div class="contact-note">
+            <i class="fas fa-info-circle"></i>
+            <span>Atención a <strong>PYMEs, empresas y personas naturales</strong> &middot; Primera consulta sin costo</span>
+          </div>
+        </div>
+        <div class="contact-form-box">
+          <h3>Cuéntame sobre tu empresa</h3>
+          <form id="contactForm" name="contacto-df" method="POST"
+            data-netlify="true" data-netlify-honeypot="bot-field" novalidate>
+            <input type="hidden" name="form-name" value="contacto-df" />
+            <p style="display:none">
+              <label>No llenar: <input name="bot-field" /></label>
+            </p>
+            <div class="form-group">
+              <label for="nombre">Nombre completo</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required/>
+            </div>
+            <div class="form-group">
+              <label for="email">Correo electrónico</label>
+              <input type="email" id="email" name="email" placeholder="tu@correo.com" required/>
+            </div>
+            <div class="form-group">
+              <label for="rut">RUT (opcional)</label>
+              <input type="text" id="rut" name="rut" placeholder="12.345.678-9"/>
+            </div>
+            <div class="form-group">
+              <label for="mensaje">¿En qué puedo ayudarte?</label>
+              <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntame brevemente tu situación o consulta..." required></textarea>
+            </div>
+            <button type="submit" class="btn-form-submit" id="btnEnviar">
+              <i class="fas fa-paper-plane"></i> Enviar Mensaje
+            </button>
+            <div class="form-success" id="formSuccess">
+              <i class="fas fa-check-circle"></i> ¡Mensaje enviado! Te contactaré a la brevedad.
+            </div>
+            <div class="form-error" id="formError">
+              <i class="fas fa-exclamation-circle"></i> Completa los campos obligatorios correctamente.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <svg viewBox="0 0 60 70" xmlns="http://www.w3.org/2000/svg" width="44" height="52">
+              <path d="M4 8 L4 62 L22 62 Q38 62 38 35 Q38 8 22 8 Z" fill="#ffffff"/>
+              <path d="M10 15 L21 15 Q30 15 30 35 Q30 55 21 55 L10 55 Z" fill="#1c2d5a"/>
+              <rect x="28" y="8" width="6" height="36" fill="#9aa0ad"/>
+              <rect x="28" y="8" width="26" height="6" fill="#9aa0ad"/>
+              <rect x="28" y="26" width="20" height="6" fill="#9aa0ad"/>
+            </svg>
+            <div>
+              <span class="footer-brand-name">DF Asesorías</span>
+              <span class="footer-brand-sub">Daniel Flores Muñoz · Contador Auditor</span>
+            </div>
+          </div>
+          <p class="footer-slogan">"Contabilidad Clara y Auditoría Estratégica para Pymes"</p>
+          <div class="footer-social">
+            <a href="https://www.linkedin.com/in/daniel-flores-mu%C3%B1oz-5725a7188/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://wa.me/56977423347" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:Daniel.flores.munoz1995@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Soluciones</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="experiencia.html">Sobre Mí</a></li>
+          </ul>
+        </div>
+        <div class="footer-services">
+          <h4>Servicios</h4>
+          <ul>
+            <li>Creación de Empresas</li>
+            <li>Inicio de Actividades SII</li>
+            <li>Contabilidad Mensual</li>
+            <li>F29 (IVA) Mensual</li>
+            <li>Sueldos y Remuneraciones</li>
+            <li>Auditoría e Inventarios</li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contacto Directo</h4>
+          <p><i class="fas fa-envelope"></i> Daniel.flores.munoz1995@gmail.com</p>
+          <p><i class="fab fa-whatsapp"></i> +56 9 7742 3347</p>
+          <p><i class="fas fa-map-marker-alt"></i> RM y todo Chile</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> DF Asesorías · Daniel Flores Muñoz · Todos los derechos reservados</p>
+        <p class="footer-bottom-right">Hecho en Santiago de Chile</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón WhatsApp flotante -->
+  <a href="https://wa.me/56977423347?text=Hola%20Daniel%2C%20quisiera%20consultar%20sobre%20mi%20F29%20o%20Sueldos."
+     class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="wsp-tooltip">¡Escríbeme!</span>
+  </a>
+
+  <!-- Botón volver arriba -->
+  <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
