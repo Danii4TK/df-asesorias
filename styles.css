@@ -79,7 +79,7 @@ ul { list-style: none; }
   justify-content: space-between;
 }
 .nav-logo { display: flex; align-items: center; gap: 10px; }
-.logo-svg { display: flex; align-items: center; margin-right: 4px; }
+.logo-svg { display: flex; align-items: center; }
 .nav-brand-text { display: flex; flex-direction: column; }
 .brand-main {
   font-family: 'Montserrat', sans-serif;
@@ -91,9 +91,10 @@ ul { list-style: none; }
 }
 .navbar.scrolled .brand-main { color: var(--navy-dark); }
 .brand-sub {
-  font-size: 0.7rem;
-  color: rgba(255,255,255,0.7);
-  letter-spacing: 1px;
+  font-size: 0.65rem;
+  color: #D1D1D1;
+  font-weight: 300;
+  letter-spacing: 2px;
   text-transform: uppercase;
   transition: var(--transition);
 }
@@ -217,9 +218,6 @@ ul { list-style: none; }
   gap: 8px;
 }
 .hero-badge i { color: var(--gold); }
-@media (max-width: 480px) {
-  .hero-badge { font-size: 0.64rem; letter-spacing: 1px; padding: 6px 14px; }
-}
 .hero-title {
   font-size: clamp(1.8rem, 5vw, 3.2rem);
   font-weight: 800;

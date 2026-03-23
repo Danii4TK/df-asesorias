@@ -92,6 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
       countersStarted = true;
       counters.forEach(counter => {
         const target = parseInt(counter.getAttribute('data-target'), 10);
+        if (isNaN(target)) { return; }
         const duration = 1800;
         const step = target / (duration / 16);
         let current = 0;
@@ -294,9 +295,9 @@ document.addEventListener('DOMContentLoaded', () => {
         btnEnviar.innerHTML = '<i class="fas fa-paper-plane"></i> Enviar Mensaje';
         btnEnviar.disabled = false;
         // Fallback mailto si Netlify no está disponible (prueba local)
-        const subject = encodeURIComponent('Consulta DF Asesorías - ' + nombre);
+        const subject = encodeURIComponent('Consulta ASIFCAP - ' + nombre);
         const body    = encodeURIComponent('Nombre: ' + nombre + '\nEmail: ' + email + '\nMensaje: ' + mensaje);
-        window.open('mailto:Daniel.flores.munoz1995@gmail.com?subject=' + subject + '&body=' + body);
+        window.open('mailto:daniel.flores@asifcap.com?subject=' + subject + '&body=' + body);
         formSuccess.classList.add('show');
         form.reset();
         setTimeout(() => formSuccess.classList.remove('show'), 7000);
