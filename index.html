@@ -215,12 +215,7 @@
         </div>
         <div class="contact-form-box">
           <h3>Cuéntame sobre tu empresa</h3>
-          <form id="contactForm" name="contacto-df" method="POST"
-            data-netlify="true" data-netlify-honeypot="bot-field" novalidate>
-            <input type="hidden" name="form-name" value="contacto-df" />
-            <p style="display:none">
-              <label>No llenar: <input name="bot-field" /></label>
-            </p>
+          <form id="contactForm" action="https://formspree.io/f/mykbyybd" method="POST" novalidate>
             <div class="form-group">
               <label for="nombre">Nombre completo</label>
               <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required/>
