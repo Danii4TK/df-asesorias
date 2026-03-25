@@ -230,7 +230,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* =============================================
-     CONTACT FORM — Envío real vía Netlify Forms
+     CONTACT FORM — Envío real vía Formspree
      ============================================= */
   const form        = document.getElementById('contactForm');
   const formSuccess = document.getElementById('formSuccess');
