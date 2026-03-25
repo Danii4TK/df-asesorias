@@ -263,17 +263,10 @@ document.addEventListener('DOMContentLoaded', () => {
       btnEnviar.disabled = true;
 
       try {
-        // Encode form data para Netlify
-        const encode = (data) =>
-          Object.keys(data)
-            .map(k => encodeURIComponent(k) + '=' + encodeURIComponent(data[k]))
-            .join('&');
-
-        const response = await fetch('/', {
+        const response = await fetch('https://formspree.io/f/mykbyybd', {
           method: 'POST',
-          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-          body: encode({
-            'form-name': 'contacto-df',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify({
             nombre,
             email,
             rut: document.getElementById('rut')?.value || '',
@@ -294,13 +287,8 @@ document.addEventListener('DOMContentLoaded', () => {
       } catch (err) {
         btnEnviar.innerHTML = '<i class="fas fa-paper-plane"></i> Enviar Mensaje';
         btnEnviar.disabled = false;
-        // Fallback mailto si Netlify no está disponible (prueba local)
-        const subject = encodeURIComponent('Consulta ASIFCAP - ' + nombre);
-        const body    = encodeURIComponent('Nombre: ' + nombre + '\nEmail: ' + email + '\nMensaje: ' + mensaje);
-        window.open('mailto:daniel.flores@asifcap.com?subject=' + subject + '&body=' + body);
-        formSuccess.classList.add('show');
-        form.reset();
-        setTimeout(() => formSuccess.classList.remove('show'), 7000);
+        formError.classList.add('show');
+        setTimeout(() => formError.classList.remove('show'), 4000);
       }
     });
   }
